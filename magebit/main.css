@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/Base.png);
+  font-family: sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.container main {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 100px;
+}
+
+.container main header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container main header .title img {
+  position: absolute;
+  left: 70px;
+}
+
+.container main header .title h3 {
+  color: #131821;
+}
+
+.container main header a {
+  text-decoration: none;
+  padding: 10px;
+  color: #6a707b;
+}
+
+.container main header a:hover {
+  color: #4066a5;
+}
+
+.container main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+}
+
+.container main section #error {
+  position: relative;
+  top: 120px;
+  color: red;
+}
+
+.container main section .subscribe-title {
+  padding: 15px 0;
+  color: #131821;
+  font-size: 32px;
+  text-align: left;
+}
+
+.container main section .subscribed {
+  text-align: center;
+  font-size: 32px;
+  color: #131821;
+  margin: 0 auto;
+}
+
+.container main section p {
+  color: #6a707b;
+}
+
+.container main section .email-form {
+  position: absolute;
+  left: 70px;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+  border: 1px solid #e3e3e4;
+  border-left: 4px solid #4066a5;
+}
+
+.container main section .email-form .email {
+  padding: 20px 26px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.container main section .email-form .btn {
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.container main section .email-form .btn i {
+  font-size: 20px;
+  padding: 10px;
+  color: #6a707b;
+}
+
+.container main section .email-form .btn:hover i {
+  color: #4066a5;
+}
+
+.container main section .email-form:hover {
+  border: 1px solid #4066a5;
+  border-left: 4px solid #4066a5;
+}
+
+.container main section .tos {
+  padding-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main section .tos input {
+  width: 20px;
+  height: 20px;
+}
+
+.container main section .tos p {
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+.container main section .tos p a {
+  color: #333;
+}
+
+.container main section #tosError {
+  color: red;
+  padding: 5px 0;
+}
+
+.container main footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container main footer .underline {
+  margin-bottom: 50px;
+  width: 400px;
+  height: 2px;
+  background-color: #e3e3e4;
+}
+
+.container main footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main footer .socials a {
+  color: #6a707b;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.container main footer .socials a .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #6a707b;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+}
+
+.container main footer .socials a .icon-wrapper:active {
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+}
+
+.container main footer .socials .face:hover {
+  color: #ffffff;
+}
+
+.container main footer .socials .face:hover .icon-wrapper {
+  border: 1px solid #4066a5;
+  background-color: #4066a5;
+}
+
+.container main footer .socials .insta:hover {
+  color: #ffffff;
+}
+
+.container main footer .socials .insta:hover .icon-wrapper {
+  border: 1px solid #b13795;
+  background-color: #b13795;
+}
+
+.container main footer .socials .twit:hover {
+  color: #ffffff;
+}
+
+.container main footer .socials .twit:hover .icon-wrapper {
+  border: 1px solid #1da1f2;
+  background-color: #1da1f2;
+}
+
+.container main footer .socials .tube:hover {
+  color: #ffffff;
+}
+
+.container main footer .socials .tube:hover .icon-wrapper {
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+}
+
+.container .image-section {
+  width: 65%;
+  display: block;
+}
+
+.container .image-section img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container main section {
+    margin: 150px 10px;
+  }
+  .container main section .subscribe h1 {
+    font-size: 24px;
+  }
+  .container main section .subscribe .discount {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1200px) {
+  .container main {
+    background-image: url(./images/Image.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .container main header {
+    background-color: #f2f5fa;
+    padding: 15px;
+  }
+  .container main header .title {
+    padding: 10px;
+  }
+  .container main header .title img {
+    top: 0;
+    left: 0;
+    padding: 5px;
+  }
+  .container main header .title h3 {
+    display: none;
+  }
+  .container main section {
+    background-color: #f2f5fa;
+    margin: 150px 20px;
+    margin-bottom: 0;
+    padding: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container main section .email-form {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .container main section #error {
+    position: relative;
+    top: 0;
+  }
+  .container main section .tos {
+    padding: 10px 0;
+  }
+  .container main footer {
+    background-color: #f2f5fa;
+    margin: 20px;
+    margin-top: 0;
+  }
+  .container main footer .underline {
+    width: 300px;
+    margin-bottom: 0;
+  }
+  .container .image-section {
+    display: none;
+  }
+}
+
+.table {
+  width: 50%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  color: #000000;
+  margin: 20px;
+}
+
+.table td,
+.table th {
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 3px;
+}
+
+.del {
+  width: 10%;
+}
+
+.del input {
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  background-color: #f75555;
+}
+
+.filter {
+  margin: 20px;
+}
+/*# sourceMappingURL=main.css.map */

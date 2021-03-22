@@ -1,0 +1,352 @@
+$primary-color: #4066a5;
+$text-color: #131821;
+$text-light: #6a707b;
+$shadow-color: #e3e3e4;
+$shadow-light: #f2f5fa;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/Base.png);
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+
+  main {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 100px;
+
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        img {
+          position: absolute;
+          left: 70px;
+        }
+
+        h3 {
+          color: $text-color;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        padding: 10px;
+        color: $text-light;
+      }
+      a:hover {
+        color: $primary-color;
+      }
+    }
+
+    section {
+      display: flex;
+      padding: 100px;
+
+      #error {
+        position: relative;
+        top: 120px;
+        color: red;
+      }
+
+      .subscribe-title {
+        padding: 15px 0;
+        color: $text-color;
+        font-size: 32px;
+        text-align: left;
+      }
+      .subscribed {
+        text-align: center;
+        font-size: 32px;
+        color: $text-color;
+        margin: 0 auto;
+      }
+      p {
+        color: $text-light;
+      }
+
+      .email-form {
+        position: absolute;
+        left: 70px;
+        width: 700px;
+        display: flex;
+        margin: 50px 0;
+        border: 1px solid $shadow-color;
+        border-left: 4px solid $primary-color;
+
+        .email {
+          padding: 20px 26px;
+          width: 100%;
+          border: none;
+          outline: none;
+        }
+        .btn {
+          padding: 10px;
+          background-color: #fff;
+          border: none;
+          cursor: pointer;
+          outline: none;
+
+          i {
+            font-size: 20px;
+            padding: 10px;
+            color: $text-light;
+          }
+        }
+        .btn:hover {
+          i {
+            color: $primary-color;
+          }
+        }
+      }
+      .email-form:hover {
+        border: 1px solid $primary-color;
+        border-left: 4px solid $primary-color;
+      }
+
+      .tos {
+        padding-top: 160px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        input {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 16px;
+          padding: 0 5px;
+
+          a {
+            color: #333;
+          }
+        }
+      }
+      #tosError {
+        color: red;
+        padding: 5px 0;
+      }
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .underline {
+        margin-bottom: 50px;
+        width: 400px;
+        height: 2px;
+        background-color: $shadow-color;
+      }
+
+      .socials {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+
+        a {
+          color: $text-light;
+          text-decoration: none;
+          margin: 10px;
+
+          .icon-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid $text-light;
+            font-size: 1.5rem;
+            width: 50px;
+            height: 50px;
+          }
+          .icon-wrapper:active {
+            filter: brightness(85%);
+          }
+        }
+
+        .face:hover {
+          color: #ffffff;
+
+          .icon-wrapper {
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+          }
+        }
+        .insta:hover {
+          color: #ffffff;
+
+          .icon-wrapper {
+            border: 1px solid #b13795;
+            background-color: #b13795;
+          }
+        }
+        .twit:hover {
+          color: #ffffff;
+
+          .icon-wrapper {
+            border: 1px solid #1da1f2;
+            background-color: #1da1f2;
+          }
+        }
+        .tube:hover {
+          color: #ffffff;
+
+          .icon-wrapper {
+            border: 1px solid #ff0000;
+            background-color: #ff0000;
+          }
+        }
+      }
+    }
+  }
+
+  .image-section {
+    width: 65%;
+    display: block;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    main {
+      section {
+        margin: 150px 10px;
+        .subscribe {
+          h1 {
+            font-size: 24px;
+          }
+          .discount {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1200px) {
+  .container {
+    main {
+      background-image: url(./images/Image.png);
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      header {
+        background-color: $shadow-light;
+        padding: 15px;
+
+        .title {
+          padding: 10px;
+          img {
+            top: 0;
+            left: 0;
+            padding: 5px;
+          }
+
+          h3 {
+            display: none;
+          }
+        }
+      }
+      section {
+        background-color: $shadow-light;
+        margin: 150px 20px;
+        margin-bottom: 0;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+
+        .email-form {
+          position: relative;
+          left: 0;
+          width: 100%;
+          margin: 10px 0;
+        }
+        #error {
+          position: relative;
+          top: 0;
+        }
+        .tos {
+          padding: 10px 0;
+        }
+      }
+      footer {
+        background-color: $shadow-light;
+        margin: 20px;
+        margin-top: 0;
+
+        .underline {
+          width: 300px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .image-section {
+      display: none;
+    }
+  }
+}
+
+.table {
+  width: 50%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  color: #000000;
+  margin: 20px;
+}
+
+.table td,
+.table th {
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 3px;
+}
+
+.del {
+  width: 10%;
+}
+
+.del input {
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(247, 85, 85);
+}
+
+.filter {
+  margin: 20px;
+}
